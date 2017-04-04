@@ -13,18 +13,27 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null || naziv.isEmpty()){
+			throw new RuntimeException();
+		}
 		this.naziv = naziv;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv == null || skraceniNaziv.isEmpty()){
+			throw new RuntimeException();
+		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public LinkedList<Kurs> getKursevi() {
 		return kursevi;
 	}
 	public void setKursevi(LinkedList<Kurs> kursevi) {
+		if(kursevi == null || kursevi.isEmpty()){
+			throw new RuntimeException();
+		}
 		this.kursevi = kursevi;
 	}
 	
