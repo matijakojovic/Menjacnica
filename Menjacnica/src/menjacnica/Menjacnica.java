@@ -45,7 +45,6 @@ public class Menjacnica implements MenjacnicaInterfejs {
 				break;
 			}
 		}
-		
 	}
 
 	@Override
